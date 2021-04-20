@@ -2,7 +2,7 @@ name: first-workflow
 on: [push]
 jobs:
   check-python-version:
-    runs-on: self-host
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python 3.6.9
